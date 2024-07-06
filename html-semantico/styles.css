@@ -1,0 +1,258 @@
+/* Reset básico */
+* {
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove preenchimentos padrão */
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Define a família de fontes para o corpo do documento */
+    line-height: 1.6;
+    /* Define a altura da linha para melhor legibilidade */
+    color: #333;
+    /* Cor do texto padrão */
+}
+
+.container {
+    width: 100%;
+    /* Largura da container com 90% da largura do viewport */
+    max-width: 1200px;
+    /* Largura máxima da container para telas maiores */
+    margin: 0 auto;
+    /* Centraliza a container horizontalmente */
+    padding: 20px;
+    /* Espaçamento interno da container */
+}
+
+.header {
+    background-color: #4C45B2;
+    /* Cor de fundo do cabeçalho */
+    color: #fff;
+    /* Cor do texto no cabeçalho */
+    padding: 10px 0;
+    /* Espaçamento interno no cabeçalho */
+    text-align: center;
+    /* Alinhamento do texto centralizado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra leve abaixo do cabeçalho */
+}
+
+.header-title {
+    font-size: 3rem;
+    /* Tamanho da fonte do título do cabeçalho */
+    font-weight: 700;
+    /* Peso da fonte (negrito) */
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculas */
+    letter-spacing: 2px;
+    /* Espaçamento entre letras */
+    margin-bottom: 10px;
+    /* Margem inferior */
+}
+
+.nav-list {
+    list-style-type: none;
+    /* Remove o estilo padrão da lista */
+    text-align: center;
+    /* Alinha os itens da lista centralizados */
+    margin-top: 20px;
+    /* Margem superior */
+}
+
+.nav-item {
+    display: inline-block;
+    /* Exibe os itens da lista em linha */
+    margin-right: 20px;
+    /* Margem direita entre os itens */
+}
+
+.nav-link {
+    color: #fff;
+    /* Cor do texto dos links */
+    text-decoration: none;
+    /* Remove decoração de texto nos links */
+    font-size: 1.2rem;
+    /* Tamanho da fonte dos links */
+    transition: color 0.3s ease;
+    /* Transição suave da cor ao passar o mouse */
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #home {
+        background-color: beige;
+        width: 100vw;
+
+
+
+        & div.container {
+            text-align: center;
+            width: 100vw;
+
+            & .section-title {
+                font-size: 40px;
+            }
+
+            & .section-description {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            & .figure {
+                max-width: 100%;
+
+                & .figure-img {
+                    border-radius: 15px;
+                    max-width: 60%;
+                    margin: 20px auto 10px;
+
+                    &:hover {
+                        transform: scale(115%);
+                        transition: 0.4s ease-in-out;
+                    }
+
+                }
+            }
+        }
+    }
+
+    & #sobre {
+        background-color: burlywood;
+        width: 100vw;
+
+        & .container {
+            width: 80vw;
+            text-align: center;
+
+            & .section-title {
+                font-size: 36px;
+            }
+
+            & summary {
+                cursor: pointer;
+            }
+
+            & .section-description {
+                font-size: 24px;
+                font-weight: 600;
+
+
+            }
+        }
+    }
+
+    #produtos {
+        background-color: beige;
+        width: 100vw;
+        text-align: center;
+
+        & .section-title {
+            font-size: 36px;
+        }
+
+        & article {
+            width: 50vw;
+            margin: 15px auto;
+            border: 2px solid burlywood;
+            border-radius: 15px;
+            box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.541);
+            cursor: pointer;
+        }
+
+    }
+
+    #blog {
+        background-color: burlywood;
+        width: 100vw;
+        padding: 15px;
+
+        & .container {
+            max-width: 70%;
+
+            & h2 {
+                font-size: 36px;
+                margin-bottom: 16px;
+
+            }
+
+            & .article {
+                border: 2px solid beige;
+                border-radius: 15px;
+                margin: 10px auto;
+                padding: 10px 20px;
+                cursor: pointer;
+
+
+                & h3 {
+                    font-size: 24px;
+                    text-align: center;
+                    text-decoration: underline;
+                    color: brown;
+                }
+
+                & .article-meta {
+                    text-align: center;
+                    font-style: italic;
+                }
+
+                & .article-description {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+.promo {
+    background-color: beige;
+    width: 100vw;
+    text-align: center;
+
+    & .container {
+
+
+        & h2 {
+            font-size: 36px;
+
+        }
+
+        & p {
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        & ul {
+            list-style: none;
+
+            & li {
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+
+
+}
+
+footer {
+    background-color: #4C45B2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    & a {
+        text-decoration: none;
+        color: beige;
+    }
+
+}
